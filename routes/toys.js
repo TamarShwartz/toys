@@ -1,5 +1,6 @@
 const express = require("express");
 const { auth } = require("../middlewares/auth");
+const {ToyModel,validateToy} = require("../models/ToyModel.js")
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -104,8 +105,10 @@ router.post("/", auth,async (req, res) => {
     }
     try {
         let toy = new ToyModel(req.body);
+        
         // add the user_id of the user that add the toy
-        toy.user_id = req.tokenData._id;
+        toy.user_id = req.tokenData.user_id;
+        // console.log(req.tokenData);
         await toy.save();
         res.status(201).json(toy);
     }

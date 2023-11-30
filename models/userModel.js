@@ -18,9 +18,8 @@ let userSchema = new mongoose.Schema({
 
 exports.UserModel = mongoose.model("users", userSchema);
 
-//                      הוספת הרול 
 exports.createToken = (user_id, role) => {
-  let token = jwt.sign({_id:user_id},config.tokenSecret,{expiresIn:"60mins"})
+  let token = jwt.sign({ user_id, role }, config.tokenSecret, { expiresIn: "60mins" });
   return token;
 }
 
