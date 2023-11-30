@@ -118,6 +118,7 @@ router.post("/", auth,async (req, res) => {
     }
 })
 //editToy
+//להצפין
 router.put("/:editId", auth,  async (req, res) => {
     let validBody = validateToy(req.body);
     if (validBody.error) {

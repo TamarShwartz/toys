@@ -20,7 +20,7 @@ exports.validateToy = (_reqBody) => {
   let schemaJoi = Joi.object({
     name: Joi.string().min(2).max(99).required(),
     info: Joi.string().min(3).max(100).required(),
-    category: Joi.string().min(3).max(15).required(),
+    category: Joi.string().min(3).max(30).required(),
     img_url: Joi.string().allow(null, "").max(500),
     price: Joi.number().min(1).max(9999).required()
   })
