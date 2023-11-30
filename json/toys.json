@@ -1,0 +1,128 @@
+[
+    {
+        "name": "Electric Train with Winding Track",
+        "info": "Electric train with winding track",
+        "category": "Trains",
+        "img_url": "https://images.pexels.com/photos/1004372/pexels-photo-1004372.jpeg",
+        "price": 100,
+        "created_date": "2023-11-30T13:40:00Z",
+        "id_user": "6568e8d9e6b6039a45088bb3"
+    },
+    {
+        "name": "Barbie Doll with Clothes and Accessories",
+        "info": "Barbie doll with clothes and accessories",
+        "category": "Dolls",
+        "img_url": "https://images.pexels.com/photos/1062473/pexels-photo-1062473.jpeg",
+        "price": 50,
+        "created_date": "2023-11-29T12:00:00Z",
+        "id_user": "6568e8c6e6b6039a45088bb1"
+    },
+    {
+        "name": "Remote Control Race Car",
+        "info": "Remote control race car",
+        "category": "Cars",
+        "img_url": "https://images.pexels.com/photos/1004407/pexels-photo-1004407.jpeg",
+        "price": 70,
+        "created_date": "2023-11-28T11:00:00Z",
+        "id_user": "6568e886e6b6039a45088bad"
+    },
+    {
+        "name": "Lego Toys",
+        "info": "Lego toys",
+        "category": "Building toys",
+        "img_url": "https://images.pexels.com/photos/1004434/pexels-photo-1004434.jpeg",
+        "price": 30,
+        "created_date": "2023-11-27T10:00:00Z",
+        "id_user": "6568e886e6b6039a45088bad"
+    },
+    {
+        "name": "Soft Stuffed Animal Doll",
+        "info": "Soft stuffed animal doll",
+        "category": "Dolls",
+        "img_url": "https://images.pexels.com/photos/1062501/pexels-photo-1062501.jpeg",
+        "price": 40,
+        "created_date": "2023-11-26T09:00:00Z",
+        "id_user": "6568e886e6b6039a45088bad"
+    },
+    {
+        "name": "Board Games",
+        "info": "Board games",
+        "category": "Board games",
+        "img_url": "https://images.pexels.com/photos/1004452/pexels-photo-1004452.jpeg",
+        "price": 60,
+        "created_date": "2023-11-25T08:00:00Z",
+        "id_user": "6568e8c6e6b6039a45088bb1"
+    },
+    {
+        "name": "Arts and Crafts Toys",
+        "info": "Arts and crafts toys",
+        "category": "Arts and crafts",
+        "img_url": "https://images.pexels.com/photos/1004486/pexels-photo-1004486.jpeg",
+        "price": 20,
+        "created_date": "2023-11-24T07:00:00Z",
+        "id_user": "6568e8a9e6b6039a45088baf"
+    },
+    {
+        "name": "Puzzles",
+        "info": "Puzzles for all ages",
+        "category": "Puzzles",
+        "img_url": "https://images.pexels.com/photos/1004468/pexels-photo-1004468.jpeg",
+        "price": 25,
+        "created_date": "2023-11-22T06:00:00Z",
+        "id_user": "6568e8d9e6b6039a45088bb3"
+    },
+    {
+        "name": "Musical instruments",
+        "info": "Musical instruments for kids",
+        "category": "Musical instruments",
+        "img_url": "https://images.pexels.com/photos/1004473/pexels-photo-1004473.jpeg",
+        "price": 50,
+        "created_date": "2023-11-21T05:00:00Z",
+        "id_user": "6568e886e6b6039a45088bad"
+    },
+    {
+        "name": "Outdoor toys",
+        "info": "Toys for outdoor play",
+        "category": "Outdoor toys",
+        "img_url": "https://images.pexels.com/photos/1004478/pexels-photo-1004478.jpeg",
+        "price": 75,
+        "created_date": "2023-11-20T04:00:00Z",
+        "id_user": "6568e8a9e6b6039a45088baf"
+    },
+    {
+        "name": "Sports equipment",
+        "info": "Sports equipment for kids",
+        "category": "Sports equipment",
+        "img_url": "https://images.pexels.com/photos/1004483/pexels-photo-1004483.jpeg",
+        "price": 100,
+        "created_date": "2023-11-19T03:00:00Z",
+        "id_user": "6568e8c6e6b6039a45088bb1"
+    },
+    {
+        "name": "Role-playing toys",
+        "info": "Toys for pretend play",
+        "category": "Role-playing toys",
+        "img_url": "https://images.pexels.com/photos/1004488/pexels-photo-1004488.jpeg",
+        "price": 40,
+        "created_date": "2023-11-18T02:00:00Z",
+        "id_user": "6568e8d9e6b6039a45088bb3"
+    },
+    {
+        "name": "Educational toys",
+        "info": "Toys that help kids learn",
+        "category": "Educational toys",
+        "img_url": "https://images.pexels.com/photos/1004493/pexels-photo-1004493.jpeg",
+        "price": 60,
+        "created_date": "2023-11-17T01:00:00Z",
+        "id_user": "6568e886e6b6039a45088bad"
+    },
+    {
+        "name": "Baby toys",
+        "info": "Toys for babies",
+        "category": "Baby toys",
+        "img_url": "https://images.pexels.com/photos/1004498/pexels-photo-1004498.jpeg",
+        "price": 20,
+        "created_date": "2023-11-16T00:00:00Z",
+        "id_user": "6568e8a9e6b6039a45088baf"
+    }
+]
