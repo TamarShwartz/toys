@@ -118,7 +118,6 @@ router.post("/", auth,async (req, res) => {
     }
 })
 //editToy
-//להצפין
 router.put("/:editId", auth,  async (req, res) => {
     let validBody = validateToy(req.body);
     if (validBody.error) {
@@ -127,11 +126,13 @@ router.put("/:editId", auth,  async (req, res) => {
     try {
         let editId = req.params.editId;
         let data;
+        console.log(req.tokenData.role);
         if (req.tokenData.role == "admin") {
             data = await ToyModel.updateOne({ _id: editId }, req.body)
         }
         else {
-            data = await ToyModel.updateOne({ _id: editId, user_id: req.tokenData._id }, req.body)
+            console.log(req.tokenData.user_id);
+            data = await ToyModel.updateOne({ _id: editId, user_id: req.tokenData.user_id }, req.body)
         }
         res.json(data);
     }
@@ -144,12 +145,15 @@ router.put("/:editId", auth,  async (req, res) => {
 router.delete("/:delId", auth, async (req, res) => {
     try {
         let delId = req.params.delId;
+        console.log(delId);
         let data;
+        console.log(req.tokenData.role);
         if (req.tokenData.role == "admin") {
             data = await ToyModel.deleteOne({ _id: delId })
         }
         else {
-            data = await ToyModel.deleteOne({ _id: delId, user_id: req.tokenData._id })
+            data = await ToyModel.deleteOne({ _id: delId, user_id: req.tokenData.user_id })
+            console.log(req.tokenData.user_id);
         }
         res.json(data);
     }
