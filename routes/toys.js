@@ -67,7 +67,6 @@ router.get("/search", async (req, res) => {
     try {
         let queryS = req.query.s;
         let searchReg = new RegExp(queryS, "i")
-        // {$or:[{name:searchReg}, {manufacturer:searchReg},{info:searchReg}]}
         let data = await ToyModel.find({ $or: [{ name: searchReg }, { info: searchReg }] })
             .limit(perPage)
             .skip((page - 1) * perPage)
@@ -97,7 +96,7 @@ router.get("/category/:catName", async (req, res) => {
         res.status(500).json({ msg: "there error try again later", err })
     }
 })
-// Request by category to add addToy
+
 router.post("/", auth,async (req, res) => {
     let validBody = validateToy(req.body);
     if (validBody.error) {
@@ -106,7 +105,6 @@ router.post("/", auth,async (req, res) => {
     try {
         let toy = new ToyModel(req.body);
         
-        // add the user_id of the user that add the toy
         toy.user_id = req.tokenData.user_id;
         // console.log(req.tokenData);
         await toy.save();
